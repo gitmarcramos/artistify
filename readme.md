@@ -36,7 +36,7 @@ We will also implement other cool features:
 
 ---
 
-## Day I - Mission C.R.U.D (end @ 13h00)
+## Day I - Mission C.R.U.D 
 
 Today, we will focus on the CRUD part : let's start coding the dashboard !
 
