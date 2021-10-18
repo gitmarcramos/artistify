@@ -34,10 +34,11 @@ router.get("/create", (req, res, next) => {
   }
 });
 
-// POST A ITEM CREATED IN THE "DASHBOARD/STYLES"
-router.post("/", async (req, res, next) => {
+// POST AN ITEM CREATED IN THE "DASHBOARD/STYLES"
+router.post("/create", async (req, res, next) => {
   try {
       await StylesModel.create(req.body)
+      console.log(req.body);
 
       res.redirect("/dashboard/styles")
   } catch (error) {
