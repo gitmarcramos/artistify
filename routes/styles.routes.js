@@ -28,7 +28,7 @@ router.get("/delete/:id", async (req, res, next) => {
 //RENDER THE PAGE FOR THE FORM CREATE
 router.get("/create", (req, res, next) => {
   try {
-      res.render("dashboard/create.hbs")
+      res.render("dashboard/styleCreate.hbs")
   } catch (error) {
     next(error);
   }
@@ -45,5 +45,21 @@ router.post("/create", async (req, res, next) => {
     next(error);
   }
 });
+
+
+router.get("/update/:id", (req, res, next) => {
+  StylesModel.findById(req.params.id)
+    .then((music) => res.render("dashboard/styleUpdate.hbs", {music}))
+    .catch(next);
+});
+
+
+router.post("update/:id", (req, res, next) =>{
+  StylesModel.findByIdAndUpdate(req.params.id, req.body)
+    .then(() => res.redirect("/dashboard/styles"))
+    .catch(next);   
+})
+
+
 
 module.exports = router;

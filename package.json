@@ -20,5 +20,18 @@
     "morgan": "^1.10.0",
     "multer": "^1.4.3",
     "multer-storage-cloudinary": "^4.0.0"
-  }
+  },
+  "description": "This group workshop will walk you through the steps to create a fullstack application.  \r Artistify is a **CRUD** application where users are separated in 2 roles :\r - admin (logged in users)\r - visitor",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gitmarcramos/artistify.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gitmarcramos/artistify/issues"
+  },
+  "homepage": "https://github.com/gitmarcramos/artistify#readme"
 }
