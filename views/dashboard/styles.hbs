@@ -15,9 +15,9 @@
    <tbody>
        {{#each styleDisplay}} 
        <tr>
+           <td class="color" style="background-color: #{{this.color}}"> </td>
            <td>{{this.name}}</td>
-           <td><div class="color" style="background: {{this.color}}"></div></td>
-           <td>{{this.wiki}}</td>
+           <td>{{this.wikiURL}}</td>
            <td>{{this.image}}</td>
            <td> <a href=""></a> </td>
            <td><a href="/dashboard/styles/delete/{{this._id}}">Delete</a></td>
