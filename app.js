@@ -35,7 +35,7 @@ const stylesRouter = require("./routes/styles.routes.js");
 app.use("/", indexRouter); // use routers
 // use artist router here
 // use label router here
-app.use("/styles",stylesRouter);
+app.use("/dashboard/styles",stylesRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
