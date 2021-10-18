@@ -26,16 +26,16 @@ app.use(express.static(path.join(__dirname, "public")));
 
 // connect routers
 const indexRouter = require("./routes/index");
-// require artist router
+// require artist router 
 // require label router here
 // require style router here
+const stylesRouter = require("./routes/styles.routes.js");
 
 // use routers
 app.use("/", indexRouter); // use routers
 // use artist router here
 // use label router here
-// use style router here
-
+app.use("/styles/",stylesRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
